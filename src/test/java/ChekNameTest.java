@@ -1,3 +1,4 @@
+import io.qameta.allure.Step;
 import io.qameta.allure.junit4.DisplayName;
 import org.junit.Test;
 
@@ -58,6 +59,7 @@ public class ChekNameTest {
 
     @Test
     @DisplayName("Проверка текста с тремя символами")
+    @Step
     public void checkStringWithThreeChars() {
         Account account = new Account("В у");
         boolean actual = account.checkNameToEmboss();
